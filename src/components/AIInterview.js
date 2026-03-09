@@ -177,15 +177,16 @@ export default function AIInterview({ resumeData }) {
 
     try {
       const res = await sendChat(
-        resumeData?.resume_text || "",
+        resumeData?.resume_text || "No resume uploaded",
         resumeData?.job_role || "Software Engineer",
         [],
-        null,
+        "Start interview",
         selectedCategory
       );
       handleAIResponse(res.response);
     } catch (err) {
-      const fallbackMsg = "Hello! Let's begin your interview. Tell me about yourself.";
+      console.error("Interview error:", err);
+      const fallbackMsg = "Hello! Let's begin your interview. Tell me about yourself and the position you're applying for.";
       handleAIResponse(fallbackMsg);
     } finally {
       setLoading(false);

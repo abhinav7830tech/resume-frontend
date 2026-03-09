@@ -1,5 +1,11 @@
 const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL;
-console.log("Using backend URL:", BACKEND);
+
+function getAuthHeader() {
+  if (typeof window === "undefined") return {};
+  const token = localStorage.getItem("access_token");
+  return token ? { "Authorization": `Bearer ${token}` } : {};
+}
+
 export async function analyzeResume(file, jobRole) {
   const form = new FormData();
   form.append("file", file);
@@ -7,6 +13,7 @@ export async function analyzeResume(file, jobRole) {
 
   const res = await fetch(`${BACKEND}/api/analyze-resume`, {
     method: "POST",
+    headers: getAuthHeader(),
     body: form,
   });
 
@@ -17,7 +24,10 @@ export async function analyzeResume(file, jobRole) {
 export async function sendChat(resumeText, jobRole, history, userMessage, category = "technical") {
   const res = await fetch(`${BACKEND}/api/interview/chat`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { 
+      "Content-Type": "application/json",
+      ...getAuthHeader()
+    },
     body: JSON.stringify({
       resume_text: resumeText,
       job_role: jobRole,
