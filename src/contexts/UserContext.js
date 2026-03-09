@@ -10,13 +10,19 @@ export function UserProvider({ children }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    
     const token = localStorage.getItem("access_token");
     const storedUser = localStorage.getItem("user");
     
 
     if (token && storedUser) {
       setAccessToken(token);
-      setUser(JSON.parse(storedUser));
+      try {
+        setUser(JSON.parse(storedUser));
+      } catch (e) {
+        localStorage.removeItem("user");
+      }
     }
     setIsLoading(false);
   }, []);
