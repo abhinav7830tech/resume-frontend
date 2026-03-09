@@ -14,17 +14,33 @@ import { useUser } from "@/contexts/UserContext";
 
 export default function Dashboard() {
   const router = useRouter();
-  const { user, isLoading } = useUser();
+  const { user, accessToken, isLoading } = useUser();
   const [activeTab, setActiveTab] = useState("resume");
   const [resumeData, setResumeData] = useState(null);
 
   useEffect(() => {
+    console.log("Dashboard loaded, user:", user, "isLoading:", isLoading, "token:", accessToken);
     if (!isLoading && !user) {
       router.push("/auth/signin");
     }
   }, [user, isLoading, router]);
 
   if (isLoading) {
+    return (
+      <div style={{ 
+        minHeight: "100vh", 
+        display: "flex", 
+        alignItems: "center", 
+        justifyContent: "center",
+        background: "#0f172a",
+        color: "white"
+      }}>
+        Loading...
+      </div>
+    );
+  }
+
+  if (!user) {
     return null;
   }
 
