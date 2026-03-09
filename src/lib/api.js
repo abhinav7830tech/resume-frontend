@@ -1,5 +1,5 @@
 const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL;
-
+console.log("Using backend URL:", BACKEND);
 export async function analyzeResume(file, jobRole) {
   const form = new FormData();
   form.append("file", file);
