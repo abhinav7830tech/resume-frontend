@@ -91,7 +91,7 @@ export default function Home() {
         }}>
           {/* Logo */}
           <div style={{ display: "flex", alignItems: "center", gap: "8px", cursor: "pointer" }} onClick={() => router.push("/")}>
-            <img src="/my-logo.png" alt="Logo" style={{ height: 40, width: "auto", borderRadius: 8 }} />
+            <img src="/my-logo.png" alt="Logo" style={{ height: 50, width: "auto", borderRadius: 8 }} />
           </div>
 
           {/* Desktop Nav Links */}
@@ -365,7 +365,7 @@ export default function Home() {
                 </div>
                 <p style={{ fontSize: 15, color: "#cbd5e1", lineHeight: 1.7, marginBottom: 20 }}>"{item.text}"</p>
                 <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <img src="/my-logo.png" alt="Logo" style={{ height: 40, width: "auto", borderRadius: 8 }} />
+                  <img src="/my-logo.png" alt="Logo" style={{ height: 52, width: "auto", borderRadius: 8 }} />
                   <div>
                     <div style={{ fontWeight: 600, fontSize: 15 }}>{item.name}</div>
                     <div style={{ fontSize: 13, color: "#64748b" }}>{item.role}</div>
@@ -468,7 +468,7 @@ export default function Home() {
             {/* Brand */}
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
-                <img src="/my-logo.png" alt="Logo" style={{ height: 40, width: "auto", borderRadius: 8 }} />
+                <img src="/my-logo.png" alt="Logo" style={{ height: 52, width: "auto", borderRadius: 8 }} />
               </div>
               <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.6 }}>
                 AI-powered interview preparation platform to help you land your dream job.

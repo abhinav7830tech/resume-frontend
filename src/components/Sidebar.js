@@ -51,7 +51,7 @@ export default function Sidebar({ activeTab, setActiveTab }) {
         style={{ cursor: "pointer", marginBottom: 32, padding: "0 8px" }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <img src="/my-logo.png" alt="Logo" style={{ height: 40, width: "auto", borderRadius: 8 }} />
+          <img src="/my-logo.png" alt="Logo" style={{ height: 52, width: "auto", borderRadius: 8 }} />
         </div>
       </div>
 

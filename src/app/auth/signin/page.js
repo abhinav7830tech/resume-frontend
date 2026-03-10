@@ -142,7 +142,7 @@ export default function AuthPage() {
 
         {/* Logo */}
         <div style={{ textAlign: "center", marginBottom: 32 }}>
-          <img src="/my-logo.png" alt="Logo" style={{ height: 40, width: "auto", borderRadius: 8 }} />
+          <img src="/my-logo.png" alt="Logo" style={{ height: 52, width: "auto", borderRadius: 8 }} />
           <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>
             Welcome Back
           </h1>
