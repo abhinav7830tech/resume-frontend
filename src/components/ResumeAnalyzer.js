@@ -252,7 +252,7 @@ export default function ResumeAnalyzer({ onAnalysisComplete }) {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              {result.analysis.ats_score}/10
+              {result.analysis.ats_score}/100
             </div>
             <div>
               <p style={{ fontWeight: 600, marginBottom: 4, color: "white" }}>ATS Score</p>
