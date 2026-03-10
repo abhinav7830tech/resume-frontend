@@ -153,7 +153,7 @@ export default function AuthPage() {
 
         {/* Logo */}
         <div style={{ textAlign: "center", marginBottom: 32 }}>
-          <img src="/my-logo.png" alt="Logo" style={{ width: 56, height: 56, borderRadius: 16, objectFit: "contain", margin: "0 auto 16px" }} />
+          <img src="/my-logo.png" alt="Logo" style={{ height: 40, width: "auto", borderRadius: 8 }} />
           <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>
             Create Account
           </h1>
