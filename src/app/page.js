@@ -91,18 +91,7 @@ export default function Home() {
         }}>
           {/* Logo */}
           <div style={{ display: "flex", alignItems: "center", gap: "8px", cursor: "pointer" }} onClick={() => router.push("/")}>
-            <div style={{
-              width: "36px",
-              height: "36px",
-              background: "linear-gradient(135deg, #8b5cf6, #6d28d9)",
-              borderRadius: "10px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center"
-            }}>
-              <Sparkles size={20} color="white" />
-            </div>
-            <span style={{ fontSize: 22, fontWeight: 700 }}>ResumeAI</span>
+            <img src="/my-logo.png" alt="Logo" style={{ width: 36, height: 36, borderRadius: 10, objectFit: "contain" }} />
           </div>
 
           {/* Desktop Nav Links */}
@@ -375,20 +364,9 @@ export default function Home() {
                   {[...Array(5)].map((_, j) => <span key={j} style={{ color: "#fbbf24" }}>★</span>)}
                 </div>
                 <p style={{ fontSize: 15, color: "#cbd5e1", lineHeight: 1.7, marginBottom: 20 }}>"{item.text}"</p>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <div style={{
-                    width: 44,
-                    height: 44,
-                    borderRadius: "50%",
-                    background: "linear-gradient(135deg, #8b5cf6, #6d28d9)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: 14,
-                    fontWeight: 600
-                  }}>
-                    {item.avatar}
-                  </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <img src="/my-logo.png" alt="Logo" style={{ width: 40, height: 40, borderRadius: 10, objectFit: "contain" }} />
+              </div>
                   <div>
                     <div style={{ fontWeight: 600, fontSize: 15 }}>{item.name}</div>
                     <div style={{ fontSize: 13, color: "#64748b" }}>{item.role}</div>
@@ -491,18 +469,7 @@ export default function Home() {
             {/* Brand */}
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
-                <div style={{
-                  width: 40,
-                  height: 40,
-                  background: "linear-gradient(135deg, #8b5cf6, #6d28d9)",
-                  borderRadius: 10,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center"
-                }}>
-                  <Sparkles size={20} color="white" />
-                </div>
-                <span style={{ fontSize: 20, fontWeight: 700, color: "white" }}>ResumeAI</span>
+                <img src="/my-logo.png" alt="Logo" style={{ width: 40, height: 40, borderRadius: 10, objectFit: "contain" }} />
               </div>
               <p style={{ fontSize: 14, color: "#64748b", lineHeight: 1.6 }}>
                 AI-powered interview preparation platform to help you land your dream job.

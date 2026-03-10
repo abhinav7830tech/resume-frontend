@@ -125,24 +125,14 @@ export default function AuthPage() {
 
         {/* Logo */}
         <div style={{ textAlign: "center", marginBottom: 32 }}>
-          <div style={{
-            width: 56,
-            height: 56,
-            background: "linear-gradient(135deg, #8b5cf6, #6d28d9)",
-            borderRadius: 16,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0 auto 16px"
-          }}>
-            <Sparkles size={28} color="white" />
-          </div>
-          <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>
-            {isLogin ? "Welcome Back" : "Create Account"}
-          </h1>
-          <p style={{ color: "#64748b", fontSize: 14 }}>
-            {isLogin ? "Sign in to continue to ResumeAI" : "Start your interview prep journey"}
-          </p>
+          <img src="/my-logo.png" alt="Logo" style={{ width: 56, height: 56, borderRadius: 16, objectFit: "contain", margin: "0 auto 16px" }} />
+        </div>
+        <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>
+          {isLogin ? "Welcome Back" : "Create Account"}
+        </h1>
+        <p style={{ color: "#64748b", fontSize: 14 }}>
+          {isLogin ? "Sign in to continue" : "Start your interview prep journey"}
+        </p>
         </div>
 
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 20 }}>

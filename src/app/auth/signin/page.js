@@ -142,23 +142,12 @@ export default function AuthPage() {
 
         {/* Logo */}
         <div style={{ textAlign: "center", marginBottom: 32 }}>
-          <div style={{
-            width: 56,
-            height: 56,
-            background: "linear-gradient(135deg, #8b5cf6, #6d28d9)",
-            borderRadius: 16,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0 auto 16px"
-          }}>
-            <Sparkles size={28} color="white" />
-          </div>
+          <img src="/my-logo.png" alt="Logo" style={{ width: 56, height: 56, borderRadius: 16, objectFit: "contain", margin: "0 auto 16px" }} />
           <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>
             Welcome Back
           </h1>
           <p style={{ color: "#64748b", fontSize: 14 }}>
-            Sign in to continue to ResumeAI
+            Sign in to continue
           </p>
         </div>
 

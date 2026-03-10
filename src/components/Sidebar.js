@@ -51,31 +51,7 @@ export default function Sidebar({ activeTab, setActiveTab }) {
         style={{ cursor: "pointer", marginBottom: 32, padding: "0 8px" }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div
-            style={{
-              width: 40,
-              height: 40,
-              background: "linear-gradient(135deg, #8b5cf6, #6d28d9)",
-              borderRadius: 12,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Sparkles size={20} color="white" />
-          </div>
-          <div>
-            <h1
-              style={{
-                fontSize: 20,
-                fontWeight: 700,
-                color: "white",
-              }}
-            >
-              ResumeAI
-            </h1>
-            <p style={{ fontSize: 11, color: "#64748b" }}>Smart Interview</p>
-          </div>
+          <img src="/my-logo.png" alt="Logo" style={{ width: 40, height: 40, borderRadius: 12, objectFit: "contain" }} />
         </div>
       </div>
 
