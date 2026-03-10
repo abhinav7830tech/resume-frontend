@@ -364,9 +364,8 @@ export default function Home() {
                   {[...Array(5)].map((_, j) => <span key={j} style={{ color: "#fbbf24" }}>★</span>)}
                 </div>
                 <p style={{ fontSize: 15, color: "#cbd5e1", lineHeight: 1.7, marginBottom: 20 }}>"{item.text}"</p>
-              <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                <img src="/my-logo.png" alt="Logo" style={{ width: 40, height: 40, borderRadius: 10, objectFit: "contain" }} />
-              </div>
+                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                  <img src="/my-logo.png" alt="Logo" style={{ width: 40, height: 40, borderRadius: 10, objectFit: "contain" }} />
                   <div>
                     <div style={{ fontWeight: 600, fontSize: 15 }}>{item.name}</div>
                     <div style={{ fontSize: 13, color: "#64748b" }}>{item.role}</div>

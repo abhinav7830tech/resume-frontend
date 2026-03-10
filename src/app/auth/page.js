@@ -133,7 +133,6 @@ export default function AuthPage() {
         <p style={{ color: "#64748b", fontSize: 14 }}>
           {isLogin ? "Sign in to continue" : "Start your interview prep journey"}
         </p>
-        </div>
 
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 20 }}>
           {!isLogin && (
